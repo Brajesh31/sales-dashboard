@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Ubuntu" ,sans-serif;
+    background-color: white;
+}
+*::selection{
+    @apply bg-blue-200 text-gray-700
+}
+@layer utilities{
+    .poppins{
+        font-family: "Poppins" ,sans-serif;
+    }
+}
+.message-number{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: blue;
+    color: white; 
+    min-width: 21px;
+    height: fit-content;
+    font-size: 11px;
+    border-radius: 4px;
+}
+#message{
+    background-color: #05b208;
+}
+
+.pop-menu::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 3px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.ellipsis{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.drop-menu-link li::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #cdcdcd;
+}
+.drop-menu-link li::marker{
+    color: #2ca5eb;
+    font-size: 17px;
+}
+
+.bullet::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #dad0d0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
