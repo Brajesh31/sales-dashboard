@@ -76,4 +76,4 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/DATA.md](docs/DATA.md), 
 ## Contributing and license
 See [CONTRIBUTING.md](CONTRIBUTING.md). Licensed under MIT, see [LICENSE](LICENSE).
 
-Last updated: 2026-11-17 12:57 UTC
+Last updated: 2026-11-17 21:40 UTC
